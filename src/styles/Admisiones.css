@@ -1,0 +1,60 @@
+.admisiones-container {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.admisiones-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admisiones-form label {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.admisiones-form input,
+.admisiones-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 0.3rem;
+}
+
+.admisiones-form button {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admisiones-form button:hover {
+  background-color: #4a148c;
+}
+
+.footer {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 3rem 2rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin: 0.3rem 0;
+  max-width: 900px;
+}
+

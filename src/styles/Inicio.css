@@ -1,0 +1,302 @@
+/* ===================== */
+/* ESTILOS GENERALES */
+/* ===================== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f3f0ff;
+  color: #333;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.inicio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* ===================== */
+/* NAVBAR */
+/* ===================== */
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem 1rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  max-width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-logo img {
+  width: 45px;
+}
+
+.navbar h1 {
+  font-size: 1.1rem;
+  color: #3f3f3f;
+  margin: 0;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  display: none;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+.nav-links li a:hover {
+  background-color: #ede7f6;
+  color: #311b92;
+}
+
+/* Cambios de color según carrusel */
+.navbar.scrolled-blue {
+  background-color: #0cc0df;
+}
+
+.navbar.scrolled-green {
+  background-color: #00bf63;
+}
+
+.navbar.scrolled-purple {
+  background-color: #8c52ff;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-top: 2px solid #eee;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+}
+
+/* ===================== */
+/* CARRUSEL */
+/* ===================== */
+.carousel-wrapper {
+  width: 100vw;
+  max-width: 100%;
+  border-radius: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel .carousel-slider {
+  width: 100vw !important;
+}
+
+.carousel-slide.bg-blue {
+  background-color: #7db1ff;
+}
+
+.carousel-slide.bg-green {
+  background-color: #97e59f;
+}
+
+.carousel-slide.bg-pink {
+  background-color: #ba5a87;
+}
+
+.carousel-slide.bg-red {
+  background-color: #f28a8a;
+}
+
+.carousel-wrapper img {
+  object-fit: contain;
+  width: auto;
+  max-width: 100%;
+  height: 520px;
+  border-radius: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel .control-arrow {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.carousel .control-arrow:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* ===================== */
+/* BIENVENIDA */
+/* ===================== */
+.bienvenida {
+  background-color: #e1bee7;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 0;
+  width: 100vw;
+  box-shadow: none;
+}
+
+.bienvenida h2 {
+  color: #4a148c;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.bienvenida p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-admisiones {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-admisiones:hover {
+  background-color: #4a148c;
+}
+
+/* ===================== */
+/* BENEFICIOS */
+/* ===================== */
+.beneficios {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin: 2.5rem auto;
+  padding: 0 4rem;
+}
+
+.beneficio {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.beneficio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.beneficio img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.beneficio p {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ===================== */
+/* FOOTER */
+/* ===================== */
+.footer {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 3rem 2rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0.3rem 0;
+  max-width: 900px;
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+@media (max-width: 768px) {
+  .carousel-wrapper img {
+    height: 220px;
+  }
+
+  .bienvenida h2 {
+    font-size: 1.4rem;
+  }
+
+  .btn-admisiones {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .beneficios {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+    padding: 2rem 1rem;
+  }
+}

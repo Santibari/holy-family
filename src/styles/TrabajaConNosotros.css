@@ -1,0 +1,115 @@
+.trabaja-descripcion {
+  max-width: 800px;
+  margin: 3rem auto 2rem;
+  padding: 1rem 2rem;
+  text-align: justify;
+  line-height: 1.6;
+  color: #333;
+}
+
+.trabaja-descripcion h2 {
+  color: #512da8;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.trabaja-descripcion h3 {
+  color: #303f9f;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+.trabaja-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+
+.form-title {
+  text-align: center;
+  color: #4a148c;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.trabaja-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.trabaja-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.trabaja-form input,
+.trabaja-form select,
+.trabaja-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.trabaja-form .file-input {
+  border: none;
+  padding: 0.4rem;
+  font-size: 0.95rem;
+  background-color: #eee;
+  border-radius: 6px;
+}
+
+.submit-btn {
+  background-color: #c62828;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #b71c1c;
+}
+
+.footer-trabaja {
+  background-color: #6a1b9a;
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+  width: 100vw;
+  margin: 3rem 0 0 0; /* arriba 3rem, cero a los lados y abajo */
+  box-sizing: border-box;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0.3rem 0;
+  max-width: 900px;
+}
+
+
+
+
+
+

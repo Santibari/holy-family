@@ -1,0 +1,1 @@
+export default function Comunidad() { return <div>Comunidad</div>; }
