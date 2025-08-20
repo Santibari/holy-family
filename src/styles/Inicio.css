@@ -85,15 +85,19 @@ body {
 
 /* Cambios de color según carrusel */
 .navbar.scrolled-blue {
-  background-color: #0cc0df;
+  background-color: #7db1ff;
 }
 
 .navbar.scrolled-green {
-  background-color: #00bf63;
+  background-color: #97e59f;
 }
 
-.navbar.scrolled-purple {
-  background-color: #8c52ff;
+.navbar.scrolled-pink {
+  background-color: #ba5a87;
+}
+
+.navbar.scrolled-red {
+  background-color: #f28a8a;
 }
 
 @media (max-width: 768px) {
@@ -174,7 +178,7 @@ body {
 /* BIENVENIDA */
 /* ===================== */
 .bienvenida {
-  background-color: #e1bee7;
+  background-color: #b9d7e8;
   text-align: center;
   padding: 2rem 1rem;
   margin: 0;
@@ -183,7 +187,7 @@ body {
 }
 
 .bienvenida h2 {
-  color: #4a148c;
+  color: #000000;
   font-weight: 700;
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -200,7 +204,7 @@ body {
 }
 
 .btn-admisiones {
-  background-color: #6a1b9a;
+  background-color: #004caf;
   color: white;
   padding: 1rem 2rem;
   border: none;
@@ -212,7 +216,7 @@ body {
 }
 
 .btn-admisiones:hover {
-  background-color: #4a148c;
+  background-color: #003c8f;
 }
 
 /* ===================== */
@@ -257,7 +261,7 @@ body {
 /* FOOTER */
 /* ===================== */
 .footer {
-  background-color: #6a1b9a;
+  background-color: #b9d7e8;
   color: white;
   padding: 3rem 2rem;
   width: 100vw;

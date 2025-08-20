@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-logo">
         <img src={logo} alt="Logo" />
-        <h1>Holy Family – Jardín Infantil</h1>
+        <h1>HOLY-FAMILY PRESCHOOL</h1>
       </div>
 
       <button
@@ -22,8 +22,8 @@ export default function Navbar() {
 
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         <li><Link to="/" onClick={() => setMenuOpen(false)}>Inicio</Link></li>
-        <li><Link to="/admisiones" onClick={() => setMenuOpen(false)}>Admisiones</Link></li>
-        <li><Link to="/trabaja" onClick={() => setMenuOpen(false)}>Trabaja con nosotros</Link></li>
+        <li><Link to="/About_Us" onClick={() => setMenuOpen(false)}>About Us</Link></li>
+        <li><Link to="/trabaja" onClick={() => setMenuOpen(false)}>Clubs y Ludicas</Link></li>
         <li><Link to="/contacto" onClick={() => setMenuOpen(false)}>Contacto</Link></li>
         <li><Link to="/comunidad" onClick={() => setMenuOpen(false)}>Comunidad Holy Family</Link></li>
       </ul>
